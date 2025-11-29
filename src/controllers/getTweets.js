@@ -1,3 +1,5 @@
+
+
 export const getTweets = (req, res) => {
     return res.json({ message: 'Tweet dashboard!' });
 };
@@ -11,5 +13,5 @@ export const getTweetById = (req, res) => {
 };
 
 export const createTweet = (req, res) => {
-    return res.json({ message: 'Tweet created!' });
+    return res.json({ message: 'Tweet created!', body: req.body });
 };
