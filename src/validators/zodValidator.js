@@ -3,7 +3,6 @@ const validate = (schema) => {
     // Returns a validating middleware
     return async (req, res, next) => {
         try {
-            console.log(req.body);
             schema.parse(req.body);
             next();
         }
